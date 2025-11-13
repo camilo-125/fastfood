@@ -1,0 +1,112 @@
+===========================================
+INSTRUCCIONES DE INSTALACIÓN - FASTBITE
+Sistema de Comida Rápida con PHP y MySQL
+===========================================
+
+REQUISITOS:
+-----------
+- XAMPP (Apache + MySQL + PHP 7.4 o superior)
+- Navegador web moderno
+
+PASOS DE INSTALACIÓN:
+---------------------
+
+1. INSTALAR XAMPP
+   - Descarga XAMPP desde: https://www.apachefriends.org/
+   - Instala XAMPP en tu computadora
+   - Inicia el Panel de Control de XAMPP
+
+2. COPIAR ARCHIVOS
+   - Copia toda la carpeta del proyecto a: C:\xampp\htdocs\fastbite
+   - La estructura debe quedar así:
+     C:\xampp\htdocs\fastbite\
+       ├── admin/
+       ├── assets/
+       ├── config/
+       ├── customer/
+       ├── database/
+       ├── employee/
+       ├── includes/
+       ├── index.php
+       ├── login.php
+       └── etc...
+
+3. INICIAR SERVICIOS
+   - Abre el Panel de Control de XAMPP
+   - Inicia el servicio "Apache" (botón Start)
+   - Inicia el servicio "MySQL" (botón Start)
+
+4. CREAR BASE DE DATOS
+   - Abre tu navegador
+   - Ve a: http://localhost/phpmyadmin
+   - Haz clic en "Nuevo" en el panel izquierdo
+   - Crea una base de datos llamada: fastbite_db
+   - Selecciona la base de datos creada
+   - Ve a la pestaña "Importar"
+   - Haz clic en "Seleccionar archivo"
+   - Navega a: C:\xampp\htdocs\fastbite\database\schema.sql
+   - Haz clic en "Continuar" para importar
+   - Repite el proceso con: database\seed.sql
+
+5. ACCEDER AL SISTEMA
+   - Abre tu navegador
+   - Ve a: http://localhost/fastbite
+
+USUARIOS DE PRUEBA:
+-------------------
+
+ADMINISTRADOR:
+Email: admin@fastbite.com
+Contraseña: admin123
+
+EMPLEADO:
+Email: empleado@fastbite.com
+Contraseña: admin123
+
+CLIENTE:
+Email: cliente@fastbite.com
+Contraseña: admin123
+
+FUNCIONALIDADES:
+----------------
+
+CLIENTES:
+- Registrarse e iniciar sesión
+- Ver menú de productos
+- Agregar productos al carrito
+- Realizar pedidos
+- Consultar estado de pedidos
+- Ver historial de compras
+
+EMPLEADOS:
+- Iniciar sesión
+- Ver pedidos pendientes
+- Actualizar estado de pedidos
+- Marcar pedidos como entregados
+
+ADMINISTRADORES:
+- Gestionar menú (agregar, editar, eliminar productos)
+- Actualizar precios
+- Gestionar clientes
+- Ver todos los pedidos
+
+SOLUCIÓN DE PROBLEMAS:
+----------------------
+
+Si Apache no inicia:
+- Verifica que el puerto 80 no esté ocupado
+- Cierra Skype u otros programas que usen el puerto 80
+
+Si MySQL no inicia:
+- Verifica que el puerto 3306 no esté ocupado
+- Cierra otros servicios de MySQL
+
+Si hay error de conexión a la base de datos:
+- Verifica que MySQL esté corriendo
+- Verifica que la base de datos fastbite_db exista
+- Revisa el archivo config/database.php
+
+SOPORTE:
+--------
+Para más ayuda, consulta la documentación de XAMPP:
+https://www.apachefriends.org/faq.html
